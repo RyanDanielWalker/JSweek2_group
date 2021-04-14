@@ -9,13 +9,15 @@ export default class Character {
   }
 
   drainHealth() {
-    return 3;
+    this.health = this.health - 10;
   }
 
 
 
 
 };
+
+
 
 
 

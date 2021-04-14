@@ -11,10 +11,12 @@ describe('Character', () => {
     expect(newCharacter.weakness).toEqual("combat");
   })
 
-  test('should return a health value', () => {
+  test('should subtract starting value minus 10', () => {
     let character = new Character();
+    let newHealth;
+    character.health = newHealth;
     character.drainHealth();
-    expect(character.drainHealth()).toEqual(3);
+    expect(character.health).toEqual(newHealth - 10);
   });
 });
 
