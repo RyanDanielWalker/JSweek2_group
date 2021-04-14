@@ -9,7 +9,7 @@ export default class Character {
   }
 
   drainHealth() {
-    //subtract 10 from health
+    return 3;
   }
 
 
