@@ -13,9 +13,8 @@ export default class Character {
   }
 
   attack() {
-    // do stuff
+    this.strength = this.strength + 10;
   }
-
 
 };
 

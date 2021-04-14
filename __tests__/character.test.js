@@ -21,8 +21,10 @@ describe('Character', () => {
   });
   test('should add 10 to the character strength', () => {
     let character = new Character();
+    let newStrength;
+    character.strength = newStrength;
     character.attack();
-    expect(true)
+    expect(character.strength).toEqual(newStrength + 10);
   });
 
 
