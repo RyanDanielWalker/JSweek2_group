@@ -12,9 +12,9 @@ export default class Character {
     this.health = this.health - 10;
   }
 
-
-
-
+  attack() {
+    // do stuff
+  }
 
 
 };
