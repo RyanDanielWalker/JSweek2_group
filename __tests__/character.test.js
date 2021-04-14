@@ -1,4 +1,4 @@
-import { TestScheduler } from 'jest-cli'
+//THIS IS A TEST FOR THE CLASS
 import Character from '../src/js/character.js'
 
 describe('Character', () => {
@@ -10,7 +10,16 @@ describe('Character', () => {
     expect(newCharacter.health).toEqual("100");
     expect(newCharacter.weakness).toEqual("combat");
   })
-})
+
+  test('should return a health value', () => {
+    let character = new Character();
+    character.drainHealth();
+    expect(character.drainHealth()).toEqual(3);
+  });
+});
+
+
+
 
 
 

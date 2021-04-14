@@ -1,3 +1,4 @@
+//THIS IS A CLASS
 export default class Character {
   constructor(type, name, strength, health, weakness) {
     this.type = type;
@@ -7,7 +8,15 @@ export default class Character {
     this.weakness = weakness;
   }
 
+  drainHealth() {
+    //subtract 10 from health
+  }
+
+
+
+
 };
+
 
 
 
