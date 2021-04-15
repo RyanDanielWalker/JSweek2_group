@@ -1,8 +1,11 @@
-import Vehicle from '../src/js/vehicle';
+import Vehicle from '../src/js/vehicle.js';
 
 describe('Vehicle', () => {
-  test('Should create a new object', () => {
+  test('Should create an new object', () => {
     let vehicle = new Vehicle();
-    expect(vehicle.name).toEqual("Tesla");
-  });
+    expect(vehicle).toEqual(true);
+  })
 });
+
+
+
