@@ -11,15 +11,8 @@ describe('Weapon', () => {
     newWeapon.addAmmo();
     expect(newWeapon.ammo).toEqual(newAmmo + 5);
   })
-
 })
 
 
 
-// test('should subtract 10 from Character health', () => {
-//   let character = new Character();
-//   let newHealth;
-//   character.health = newHealth;
-//   character.drainHealth();
-//   expect(character.health).toEqual(newHealth - 10);
-// });
+
