@@ -25,12 +25,12 @@ describe('Character', () => {
     expect(character.strength).toEqual(newStrength + 10);
   });
   test("Should return the status of a character", () => {
-    let character = new Character();
-    character.getStats();
-    expect(character.getStats()).toEqual(true)
+    let newCharacter = new Character();
+    let stats;
+    expect(newCharacter.getStats()).toEqual(stats);
   });
-
 });
+
 
 
 

@@ -17,7 +17,9 @@ export default class Character {
   }
 
   getStats() {
-    // `Your character is a ${this.type}, and their name is ${this.name}. They currently have ${this.strength} strength points and ${this.health} points. Be careful of ${this.weakness} because that is your weakness!`
+    let stats = `Your character is a ${this.type}, and their name is ${this.name}. They currently have ${this.strength} strength points and ${this.health} points. Be careful of ${this.weakness} because that is your weakness!`;
+
+    console.log(stats)
   }
 };
 
