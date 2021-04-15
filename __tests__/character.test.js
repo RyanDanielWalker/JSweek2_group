@@ -3,15 +3,13 @@ import Character from '../src/js/character.js'
 
 describe('Character', () => {
   test('should create a Character object with properties: type, name, strength, health, weakness', () => {
-    let newCharacter = new Character("wizard", "sam", "archery", "100", "combat");
-
+    let newCharacter = new Character("wizard", "sam", "100", "100", "combat");
     expect(newCharacter.type).toEqual("wizard");
     expect(newCharacter.name).toEqual("sam");
-    expect(newCharacter.strength).toEqual("archery");
+    expect(newCharacter.strength).toEqual("100");
     expect(newCharacter.health).toEqual("100");
     expect(newCharacter.weakness).toEqual("combat");
   })
-
   test('should subtract 10 from Character health', () => {
     let character = new Character();
     let newHealth;
@@ -26,11 +24,19 @@ describe('Character', () => {
     character.attack();
     expect(character.strength).toEqual(newStrength + 10);
   });
-
-
-
+  test("Should return the status of a character", () => {
+    let character = new Character();
+    character.getStats();
+    expect(character.getStats()).toEqual(true)
+  });
 
 });
+
+
+
+
+
+
 
 
 

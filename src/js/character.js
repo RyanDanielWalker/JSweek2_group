@@ -16,8 +16,17 @@ export default class Character {
     this.strength = this.strength + 10;
   }
 
+  getStats() {
+    // `Your character is a ${this.type}, and their name is ${this.name}. They currently have ${this.strength} strength points and ${this.health} points. Be careful of ${this.weakness} because that is your weakness!`
+  }
 };
 
+
+
+
+// let length = 2;
+// let width = 3;
+// let rectangleArea = `The area of a rectangle with length ${length} and width ${width} is ${length * width}.`;
 
 
 
