@@ -6,6 +6,6 @@ export default class Weapon {
   }
 
   addAmmo() {
-
+    this.ammo = this.ammo + 5;
   }
 }

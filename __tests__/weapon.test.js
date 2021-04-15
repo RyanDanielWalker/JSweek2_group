@@ -7,8 +7,9 @@ describe('Weapon', () => {
 
   test('Should add 5 to ammo whenever the function is called', () => {
     let newWeapon = new Weapon();
+    let newAmmo = newWeapon.ammo;
     newWeapon.addAmmo();
-    expect(newWeapon.addAmmo).toEqual(5);
+    expect(newWeapon.ammo).toEqual(newAmmo + 5);
   })
 
 })
